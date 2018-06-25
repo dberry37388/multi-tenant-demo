@@ -1,0 +1,167 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Global configuration
+ *
+ *  Here you can change main theme, enable or disable certain components and
+ *  optional styles. This allows you to include only components that you need.
+ *
+ *  'true'  - enables component and includes it to main CSS file.
+ *  'false' - disables component and excludes it from main CSS file.
+ *
+ *  Layout helper: @if $layout == 'base' {...}
+ *  Theme helper: @if $theme == 'material' {...}
+ *  Component helper: @if $enable-* {...}
+ *
+ * ---------------------------------------------------------------------------- */
+
+
+//
+// Core settings
+// ------------------------------
+//
+
+$layout:       'layout_4';
+
+//** Theme: 'default' or 'material'
+$theme:        'default';
+
+
+//
+// Layout
+// ------------------------------
+//
+
+//** Sidebar navigation types
+$enable-sidebar-nav-icons-reverse:	  false;
+$enable-sidebar-nav-bordered:		  false;
+
+//** Boxed layouts
+$enable-boxed:						  true;
+
+//** Flash of unstyled content (FOUC) fix for jQuery 3.*
+$enable-fouc-fix:					  true;
+
+
+//
+// Components
+// ------------------------------
+//
+
+//** UI things
+$enable-header-elements:			  true;
+$enable-headroom:					  true;
+$enable-scrollbar:					  true;
+$enable-slinky:						  true;
+$enable-sticky:						  true;
+$enable-ripple:						  true;
+
+
+//** Forms
+$enable-uniform:					  true;
+$enable-switchery:					  false;
+$enable-bootstrap-switch:			  false;
+
+$enable-select2:					  true;
+$enable-multiselect:				  false;
+
+$enable-typeahead:					  true;
+$enable-passy:						  false;
+$enable-validation:					  true;
+$enable-alpaca:						  false;
+$enable-wizard:						  false;
+$enable-dual-listbox:				  false;
+$enable-touchspin:					  false;
+$enable-floating-labels:			  false;
+
+$enable-tags-input:					  false;
+$enable-tokenfield:					  false;
+
+
+//** Editors
+$enable-summernote:					  false;
+$enable-trumbowyg:					  false;
+$enable-ace:						  false;
+
+
+//** Pickers
+$enable-daterange:					  false;
+$enable-pickadate:					  false;
+$enable-anytime:					  false;
+$enable-spectrum:					  false;
+
+
+//** File uploaders
+$enable-plupload:					  false;
+$enable-fileinput:					  false;
+$enable-dropzone:					  false;
+
+
+//** Notifications
+$enable-pnotify:					  false;
+$enable-noty:						  false;
+$enable-jgrowl:						  false;
+$enable-sweetalert:					  false;
+
+
+//** Sliders
+$enable-noui:						  false;
+$enable-ion:						  false;
+
+
+//** Charts
+$enable-charts:						  false;
+$enable-d3:							  false;
+$enable-c3:							  false;
+
+
+//** Maps
+$enable-google-maps:				  false;
+$enable-vector-maps:				  false;
+
+
+//** jQuery UI
+$enable-jqueryui:					  false;
+$enable-jqueryui-pips:				  false;
+
+
+//** Tables
+$enable-datatable:					  false;
+$enable-datatable-select:			  false;
+$enable-datatable-scroller:			  false;
+$enable-datatable-row-reorder:		  false;
+$enable-datatable-responsive:		  false;
+$enable-datatable-keytable:			  false;
+$enable-datatable-fixed-header:		  false;
+$enable-datatable-fixed-columns:	  false;
+$enable-datatable-colreorder:		  false;
+$enable-datatable-buttons:			  false;
+$enable-datatable-autofill:			  false;
+
+$enable-handsontable:				  false;
+$enable-footable:					  false;
+
+
+//** Page kits
+$enable-blog:						  false;
+$enable-timeline:					  false;
+$enable-login:						  true;
+$enable-error:						  true;
+$enable-profile:					  false;
+$enable-tasks:						  false;
+$enable-inbox:						  false;
+$enable-chat:						  false;
+$enable-ecommerce:					  false;
+
+
+//** Misc
+$enable-fab:						  false;
+$enable-fancybox:					  false;
+$enable-fancytree:					  false;
+$enable-fullcalendar:				  false;
+$enable-image-cropper:				  false;
+$enable-ladda:						  false;
+$enable-blockui:					  false;
+$enable-pace:						  false;
+$enable-dragula:					  false;
+$enable-prism:						  false;
+$enable-demo:						  false;

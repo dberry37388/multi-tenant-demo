@@ -11,6 +11,10 @@ window.Popper = require('popper.js').default;
 try {
     window.$ = window.jQuery = require('jquery');
 
+    require('../theme/global_assets/js/plugins/loaders/blockui.min');
+    require('../theme/global_assets/js/plugins/ui/slinky.min');
+    require('../theme/global_assets/js/plugins/ui/sticky.min');
+
     require('bootstrap');
 } catch (e) {}
 

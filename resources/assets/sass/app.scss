@@ -1,14 +1,16 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
+@import "config";
 @import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "../theme/global_assets/scss/layouts/layout_4/default/compile/bootstrap";
+@import "../theme/global_assets/scss/layouts/layout_4/default/compile/bootstrap_limitless";
+@import "../theme/global_assets/scss/layouts/layout_4/default/compile/components";
+@import "../theme/global_assets/scss/layouts/layout_4/default/compile/layout";
+@import "../theme/global_assets/scss/layouts/layout_4/default/compile/colors";
+@import "../theme/global_assets/css/icons/icomoon/styles.css";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.login-form {
+    width: 25rem;
 }
