@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', 'Auth\LoginController@showLoginForm');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'tenancy.enforce'], function () {
+    Route::get('/', 'Auth\LoginController@showLoginForm');
+    
+    Auth::routes();
+    
+    Route::get('/home', 'HomeController@index')->name('home');
+});
