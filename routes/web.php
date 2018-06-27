@@ -11,16 +11,22 @@
 |
 */
 
-Route::domain('www.ccgopreporting.local')->group(function() {
+Route::domain("gopcollab.com")->group(function() {
    Route::get('/', function() {
        return view('welcome');
    });
 });
 
+Route::domain("www.gopcollab.com")->group(function() {
+    Route::get('/', function() {
+        return view('welcome');
+    });
+});
+
 Route::group(['middleware' => 'tenancy.enforce'], function () {
-    Route::get('/', 'Auth\LoginController@showLoginForm');
+        Route::get('/', 'Auth\LoginController@showLoginForm');
     
-    Auth::routes();
-    
-    Route::get('/home', 'HomeController@index')->name('home');
+        Auth::routes();
+        
+        Route::get('/home', 'HomeController@index')->name('home');
 });
