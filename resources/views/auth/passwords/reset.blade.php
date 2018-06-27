@@ -8,7 +8,7 @@
         @component('components.card')
             @slot('title')
                 <div class="text-center">
-                    <img src="{{ asset('images/ccgoplogo.jpeg') }}" alt="" width="200px">
+                    <img src="{{ asset('images/goplogo.jpg') }}" alt="" width="200px">
                 </div>
 
                 <div class="text-center mt-2">
