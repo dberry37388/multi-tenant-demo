@@ -11,6 +11,12 @@
 |
 */
 
+Route::domain('www.ccgopreporting.local')->group(function() {
+   Route::get('/', function() {
+       return view('welcome');
+   });
+});
+
 Route::group(['middleware' => 'tenancy.enforce'], function () {
     Route::get('/', 'Auth\LoginController@showLoginForm');
     
