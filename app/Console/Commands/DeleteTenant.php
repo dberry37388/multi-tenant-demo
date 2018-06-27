@@ -12,7 +12,7 @@ class DeleteTenant extends Command
      *
      * @var string
      */
-    protected $signature = 'tenant:delete {name}';
+    protected $signature = 'tenant:delete {name} {--force}';
 
     /**
      * The console command description.
@@ -30,7 +30,7 @@ class DeleteTenant extends Command
     {
         // because this is a destructive command, we'll only allow to run this command
         // if you are on the local environment
-        if (!(app()->isLocal() || app()->runningUnitTests())) {
+        if (! (app()->isLocal() || app()->runningUnitTests()) || $this->option('force') === true) {
             $this->error('This command is only available on the local environment.');
         
             return;
